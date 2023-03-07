@@ -6,6 +6,12 @@ const StyledContainer = styled.div`
 	flex-direction: column;
 	padding-left: 3rem;
 	padding-right: 3rem;
+	max-width: 330px;
+
+	@media screen and (min-width: 1024px) {
+		max-width: 330px;
+		min-width: 300px;
+	}
 `;
 
 export { StyledContainer };
