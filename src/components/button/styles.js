@@ -7,9 +7,15 @@ const StyledButton = styled.button`
 	border: none;
 	border-radius: 1.5625rem;
 	font-family: 'Lexend Deca', sans-serif;
-	color: orange;
+	color: ${({ color }) => color};
 	margin-top: auto;
 	margin-bottom: 3rem;
+
+	&:hover {
+		background-color: ${({ color }) => color};
+		color: white;
+		outline: 1px solid white;
+	}
 `;
 
 export { StyledButton };

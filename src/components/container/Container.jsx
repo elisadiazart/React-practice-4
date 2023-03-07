@@ -1,15 +1,15 @@
 import Title from "../title/Title";
 import Text from "../text/Text";
 import Button from "../button/Button";
-import Icono from "../icon/Icono";
+import IconoContainer from "../iconContainer/IconoContainer";
 import { StyledContainer } from "./styles";
 
-const Container = ({title, text, button, icon}) => {
-	return <StyledContainer>
-	<Icono icon={icon}/>
+const Container = ({title, text, button, icon, color, colorButton}) => {
+	return <StyledContainer color={color}>
+	<IconoContainer icon={icon}/>
 	<Title text={title}/>
     <Text text={text}/>
-    <Button text={button}/>
+    <Button text={button} color={colorButton}/>
 	</StyledContainer>
 };
 

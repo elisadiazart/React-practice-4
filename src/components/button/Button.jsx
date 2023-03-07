@@ -1,7 +1,7 @@
 import { StyledButton } from "./styles"
 
-const Button = ({text}) => {
-    return <StyledButton>{text}</StyledButton>
+const Button = ({text, color}) => {
+    return <StyledButton color={color} >{text}</StyledButton>
 }
 
 export default Button
